@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Francisco Rubial</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <style>
+        .circulito {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--hago la barra de navegacion -->
+    <div class="navbar-fixed">
+        <nav>
+            <!-- despues hago la envoltura como no la quiero rosa la hago azul-->
+            <div class="nav-wrapper blue">
+                <!-- agrego el logo -->
+                <a class="brand-logo center" href="#"><span class="fas fa-home"></span></a>
+                <!-- despues agrego los enlaces -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- circulito pavo de carga -->
+    <div id="circulito" class="container center circulito">
+        <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-green-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cuerpo de la pagina  -->
+    <main>
+        <!-- esta vaina es el perfil mio aqui meto labia -->
+        <section id="perfil">
+            <div class="container">
+                <div class="row">
+                    <div class="col l8 s8">
+                        <h1>Francisco Rubial</h1>
+                    </div>
+                    <div class="col l4 hide-on-med-and-down">
+                        <figure><img class="circle responsive-img" src="imagenes/yo.jpg" alt="foto de mi"></figure>
+                    </div>
+
+
+                </div>
+
+
+                <div class="divider"></div>
+
+                <h3 class="center">Sobre mí</h3>
+                <div class="row">
+                    <div class="col l6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
+                    </div>
+                    <div class="col l6">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
+                        <div class="container center">
+                            <figure>
+                                <img class="responsive-img" src="imagenes/logo_unet.jpg">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+        <section id="portafolio">
+            <div class="row">
+                <div class="col l12">
+                    <div class="container">
+                        <h3 class="center">Portafolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit deserunt molestiae officia dolores saepe atque est, eius impedit qui nulla voluptatibus accusamus magnam iste alias voluptate iusto nemo porro!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum in quidem autem, amet quaerat impedit voluptatum, facilis eligendi omnis voluptas saepe, laboriosam itaque. Facilis consectetur minima omnis eligendi dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/git.jpg" alt="diploma udemy">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Curso de Git y Github<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://www.udemy.com/git-y-github-completo-desde-cero/" target="_blank">Enlace del curso</a></p>
+                            </div>
+                            <div class="card-reveal blue">
+                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
+                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/cssyhtml.jpg" alt="diploma udemy">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Aprende HTML5 y CSS3 desde cero<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://www.udemy.com/aprende-html5-y-css3-desde-cero/" target="_blank">Enlace del curso</a></p>
+                            </div>
+                            <div class="card-reveal blue">
+                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
+                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/0001.jpg" alt="diploma platzi">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Curso de programación básica platzi<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://platzi.com/cursos/programacion-basica/" target="_blank">Enlace del curso</a></p>
+                            </div>
+                            <div class="card-reveal blue">
+                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
+                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/java.jpg" alt="diploma Java">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Curso de Java Ingeniería digital<i class="material-icons right">more_vert</i></span>
+                                <p><a href="http://www.ingenieriadigital.com.ve/" target="_blank">Página de la empresa</a></p>
+                            </div>
+                            <div class="card-reveal blue">
+                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
+                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imagenes/cplusplus.jpg" alt="diploma C++">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Curso de C++: Básico a Avanzado<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://www.udemy.com/curso-de-cpp-basico-a-avanzado/" target="_blank">Enlace del curso</a></p>
+                            </div>
+                            <div class="card-reveal blue">
+                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
+                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto"></footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(circulito).hide(1000)
+        })
+    </script>
+</body>
+
+</html>
