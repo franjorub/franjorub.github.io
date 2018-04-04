@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <style>
         .circulito {
@@ -17,8 +17,12 @@
             margin-bottom: 200px;
         }
         
-        .titulo {
-            font-family: 'Indie Flower', cursive;
+        .ochobits {
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        .roboto {
+            font-family: 'Roboto Condensed', sans-serif;
         }
     </style>
 </head>
@@ -29,11 +33,12 @@
     <div class="navbar-fixed">
         <nav>
             <!-- despues hago la envoltura como no la quiero rosa la hago azul-->
-            <div class="nav-wrapper blue">
+            <div class="nav-wrapper light-blue darken-3">
                 <!-- agrego el logo -->
                 <a class="brand-logo center" href="#"><span class="fas fa-home"></span></a>
                 <!-- despues agrego los enlaces -->
-                <ul class="right hide-on-med-and-down">
+                <ul class="right hide-on-med-and-down roboto">
+
                     <li><a href="#perfil">Perfil</a></li>
                     <li><a href="#portafolio">Portafolio</a></li>
                     <li><a href="">Contacto</a></li>
@@ -66,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l8 s8">
-                        <h1 class="titulo">Francisco Rubial</h1>
+                        <h1 class="ochobits">Francisco Rubial</h1>
                     </div>
                     <div class="col l4 hide-on-med-and-down">
                         <figure><img class="circle responsive-img" src="imagenes/yo.jpg" alt="foto de mi"></figure>
@@ -78,18 +83,24 @@
 
                 <div class="divider"></div>
 
-                <h3 class="center">Sobre mí</h3>
+
                 <div class="row">
+                    <h3 class="center ochobits">Sobre mí</h3>
                     <div class="col l6">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
+                        <div class="roboto">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
+                        </div>
+
                     </div>
                     <div class="col l6">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
+                        <div class="roboto">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
+                        </div>
                         <div class="container center">
                             <figure>
-                                <img class="responsive-img" src="imagenes/logo_unet.jpg">
+                                <img class="responsive-img" src="imagenes/logo_unet.png">
                             </figure>
                         </div>
                     </div>
@@ -106,9 +117,12 @@
             <div class="row">
                 <div class="col l12">
                     <div class="container">
-                        <h3 class="center">Portafolio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit deserunt molestiae officia dolores saepe atque est, eius impedit qui nulla voluptatibus accusamus magnam iste alias voluptate iusto nemo porro!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum in quidem autem, amet quaerat impedit voluptatum, facilis eligendi omnis voluptas saepe, laboriosam itaque. Facilis consectetur minima omnis eligendi dolorum?</p>
+                        <h3 class="center ochobits">Portafolio</h3>
+                        <div class="roboto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit deserunt molestiae officia dolores saepe atque est, eius impedit qui nulla voluptatibus accusamus magnam iste alias voluptate iusto nemo porro!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum in quidem autem, amet quaerat impedit voluptatum, facilis eligendi omnis voluptas saepe, laboriosam itaque. Facilis consectetur minima omnis eligendi dolorum?</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
