@@ -26,6 +26,16 @@
         .roboto {
             font-family: 'Roboto Condensed', sans-serif;
         }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
     </style>
 </head>
 <!-- texto de prueba -->
@@ -67,172 +77,113 @@
     </div>
 
     <!-- cuerpo de la pagina  -->
-    <main>
+    <main class="container">
         <!-- esta vaina es el perfil mio aqui meto labia -->
         <section id="perfil">
-            <div class="container">
-                <div class="row">
-                    <div class="col l8 s8">
-                        <h1 class="ochobits">Francisco Rubial</h1>
-                    </div>
-                    <div class="col l4 hide-on-med-and-down">
-                        <figure><img class="circle responsive-img" src="imagenes/yo.jpg" alt="foto de mi"></figure>
-                    </div>
 
-
+            <div class="row">
+                <div class="col l8 s8">
+                    <h1 class="ochobits">Francisco Rubial</h1>
                 </div>
-
-
-                <div class="divider"></div>
-
-
-                <div class="row">
-                    <h3 class="center ochobits">Sobre mí</h3>
-                    <div class="col l6">
-                        <div class="roboto">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
-                        </div>
-
-                    </div>
-                    <div class="col l6">
-                        <div class="roboto">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
-                        </div>
-                        <div class="container center">
-                            <figure>
-                                <img class="responsive-img" src="imagenes/logo_unet.png">
-                            </figure>
-                        </div>
-                    </div>
-
+                <div class="col l4 hide-on-med-and-down">
+                    <figure><img class="circle responsive-img" src="imagenes/yo.jpg" alt="foto de mi"></figure>
                 </div>
-
-
             </div>
-        </section>
-        <div class="container">
+
+
             <div class="divider"></div>
-        </div>
+
+
+            <div class="row">
+                <h3 class="center ochobits">Sobre mí</h3>
+                <div class="col l6">
+                    <div class="roboto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
+                    </div>
+
+                </div>
+                <div class="col l6">
+                    <div class="roboto">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
+                    </div>
+                    <div class="container center">
+                        <figure>
+                            <img class="responsive-img" src="imagenes/logo_unet.png">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <div class="divider"></div>
+
         <section id="portafolio">
-            <div class="row">
-                <div class="col l12">
-                    <div class="container">
-                        <h3 class="center ochobits">Portafolio</h3>
-                        <div class="roboto">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit deserunt molestiae officia dolores saepe atque est, eius impedit qui nulla voluptatibus accusamus magnam iste alias voluptate iusto nemo porro!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorum in quidem autem, amet quaerat impedit voluptatum, facilis eligendi omnis voluptas saepe, laboriosam itaque. Facilis consectetur minima omnis eligendi dolorum?</p>
-                        </div>
+            <h3 class="ochobits center">Portafolio</h3>
+            <span class="roboto center"><p>Desliza a los lados para ver las imagenes</p></span>
+            <h4 class="roboto left">Cursos platzi</h4>
 
-                    </div>
+            <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center">
+                    <a class="btn waves-effect white grey-text darken-text-2" href="https://platzi.com" target="_blank">Ir a Platzi</a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col l6">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="imagenes/git.jpg" alt="diploma udemy">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Curso de Git y Github<i class="material-icons right">more_vert</i></span>
-                                <p><a href="https://www.udemy.com/git-y-github-completo-desde-cero/" target="_blank">Enlace del curso</a></p>
-                            </div>
-                            <div class="card-reveal blue">
-                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
-                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item light-green white-text" href="#one!">
+                    <h2>Curso de Programación Básica online | Platzi</h2>
+                    <img class="responsive-img" src="imagenes/curso-de-programacion-basica.jpg" alt="curso programacion basica">
                 </div>
-                <div class="col l6">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="imagenes/cssyhtml.jpg" alt="diploma udemy">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Aprende HTML5 y CSS3 desde cero<i class="material-icons right">more_vert</i></span>
-                                <p><a href="https://www.udemy.com/aprende-html5-y-css3-desde-cero/" target="_blank">Enlace del curso</a></p>
-                            </div>
-                            <div class="card-reveal blue">
-                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
-                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item light-blue darken-4 white-text" href="#two!">
+                    <h2>Curso Básico de Java SE | Platzi</h2>
+                    <img class="responsive-img" src="imagenes/curso-de-javaSE.jpg" alt="curso programacion basica">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col l4">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="imagenes/0001.jpg" alt="diploma platzi">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Curso de programación básica platzi<i class="material-icons right">more_vert</i></span>
-                                <p><a href="https://platzi.com/cursos/programacion-basica/" target="_blank">Enlace del curso</a></p>
-                            </div>
-                            <div class="card-reveal blue">
-                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
-                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item green white-text" href="#three!">
+                    <h2>Curso de Git y GitHub Profesional | Platzi</h2>
+                    <img class="responsive-img" src="imagenes/git-github-platzi.jpg" alt="curso programacion basica">
                 </div>
-                <div class="col l4">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="imagenes/java.jpg" alt="diploma Java">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Curso de Java Ingeniería digital<i class="material-icons right">more_vert</i></span>
-                                <p><a href="http://www.ingenieriadigital.com.ve/" target="_blank">Página de la empresa</a></p>
-                            </div>
-                            <div class="card-reveal blue">
-                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
-                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item green accent-4 white-text" href="#four!">
+                    <h2>Curso de Desarrollo Web Online | Platzi</h2>
+                    <img class="responsive-img" src="imagenes/diploma-html5-css3-001.jpg" alt="curso programacion basica">
                 </div>
-                <div class="col l4">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="imagenes/cplusplus.jpg" alt="diploma C++">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Curso de C++: Básico a Avanzado<i class="material-icons right">more_vert</i></span>
-                                <p><a href="https://www.udemy.com/curso-de-cpp-basico-a-avanzado/" target="_blank">Enlace del curso</a></p>
-                            </div>
-                            <div class="card-reveal blue">
-                                <span class="card-title grey-text text-lighten-5"><i class="material-icons right">close</i>Card Title</span>
-                                <p class="grey-text text-lighten-5">Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
             </div>
         </section>
     </main>
 
-    <footer id="contacto"></footer>
+    <div style="margin: 10px"></div>
+
+
+    <footer id="contacto" class="page-footer light-blue lighten-1 white-text">
+        <div class="container">
+            <div class="row col l12 center">
+                <h4>¿Necesitas comunicarte conmigo?</h4>
+            </div>
+            <div class="row">
+                <div class="col l3 m3 s12 center" style="font-size: 4em"><i class="fab fa-github"></i></div>
+                <div class="col l3 m3 s12 center" style="font-size: 4em"><i class="far fa-envelope"></i></div>
+                <div class="col l3 m3 s12 center" style="font-size: 4em"><i class="fab fa-linkedin"></i></div>
+                <div class="col l3 m3 s12 center" style="font-size: 4em"><i class="fab fa-telegram"></i></div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            © 2018 Francisco Rubial
+
+        </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
             $(circulito).hide(1000)
+            $('.slider').slider();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
         })
     </script>
 </body>
