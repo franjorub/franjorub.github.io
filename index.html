@@ -49,22 +49,28 @@
 
 <body>
     <!--hago la barra de navegacion -->
-    <div class="navbar-fixed">
-        <nav>
-            <!-- despues hago la envoltura como no la quiero rosa la hago azul-->
-            <div class="nav-wrapper light-blue darken-3">
-                <!-- agrego el logo -->
-                <a class="brand-logo center" href="#"><span class="fas fa-home"></span></a>
-                <!-- despues agrego los enlaces -->
-                <ul class="right hide-on-med-and-down subtitulo">
+    
+  <div class="navbar-fixed">
+    <nav class="light-blue">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center"><span class="fas fa-home"></span></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down subtitulo">
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>    
+  </div>    
 
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+  <ul class="sidenav subtitulo" id="mobile-demo">
+    <li><a href="#perfil">Perfil</a></li>
+    <li><a href="#portafolio">Portafolio</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+          
+  
 
     <!-- circulito pavo de carga -->
     <div id="circulito" class="container center circulito">
@@ -198,7 +204,9 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script>
+
         $(document).ready(function() {
+            $('.sidenav').sidenav();
             $(function() {
                 $('a[href *= \\#]').click(function() {
                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
@@ -214,9 +222,10 @@
                     }
                 });
             });
-            $(circulito).hide(1000)
-            $('.slider').slider();
+            
+            $(circulito).hide(1000)           
             $('.materialboxed').materialbox();
+            
         })
     </script>
 </body>
