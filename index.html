@@ -139,34 +139,20 @@
                     <h3 class="titulo center">Portafolio</h3>
                 </div>
             </div>
-            <span class="subtitulo center"><p>Desliza a los lados para ver las imagenes</p></span>
-            <h4 class="subtitulo left">Cursos platzi</h4>
+            <span class="subtitulo center"><p>Desliza a los lados para ver las imagenes</p></span>            
             <div class="row">
-                <div class="col m12 s12 l12">
-                    <div class="carousel carousel-slider center">
-                        <div class="carousel-fixed-item center">
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://platzi.com" target="_blank">Ir a Platzi</a>
-                        </div>
-                        <div class="carousel-item light-green white-text" href="#one!">
-                            <h2>Curso de Programación Básica online | Platzi</h2>
-                            <img class="responsive-img" src="imagenes/curso-de-programacion-basica.jpg" alt="curso programacion basica">
-                        </div>
-                        <div class="carousel-item light-blue darken-4 white-text" href="#two!">
-                            <h2>Curso Básico de Java SE | Platzi</h2>
-                            <img class="responsive-img" src="imagenes/curso-de-javaSE.jpg" alt="curso programacion basica">
-                        </div>
-                        <div class="carousel-item green white-text" href="#three!">
-                            <h2>Curso de Git y GitHub Profesional | Platzi</h2>
-                            <img class="responsive-img" src="imagenes/git-github-platzi.jpg" alt="curso programacion basica">
-                        </div>
-                        <div class="carousel-item green accent-4 white-text" href="#four!">
-                            <h2>Curso de Desarrollo Web Online | Platzi</h2>
-                            <img class="responsive-img" src="imagenes/diploma-html5-css3-001.jpg" alt="curso programacion basica">
-                        </div>
-                    </div>
-                </div>
+                <div class="col l12 center"><h4 class="subtitulo left">Cursos platzi</h4></div>
             </div>
-
+              <div class="row">
+                <img class="col s12 m6 l6 materialboxed" width="650" src="imagenes/curso-de-javaSE.jpg" alt="diploma de Java">
+                <img class="col s12 m6 l6 materialboxed" width="650" src="imagenes/curso-de-programacion-basica.jpg" alt="diploma programacion basica">
+              </div>  
+              <div class="row">
+                <img class="col s12 m6 l6 materialboxed" width="650" src="imagenes/diploma-html5-css3-001.jpg" alt="diploma de Java">
+                <img class="col s12 m6 l6 materialboxed" width="650" src="imagenes/git-github-platzi.jpg" alt="diploma de Java">               
+              
+              </div>                 
+                
         </section>
     </main>
 
@@ -186,7 +172,7 @@
                     <a href="" target="_blank"><i class="fab fa-linkedin"></i></a></div>
                 <div class="col l3 m3 s6 center" style="font-size: 2rem">
                     <a href="https://t.me/franjorub" target="_blank"><i class="fab fa-telegram"></i></a></div>
-            </div>
+            </div>          
         </div>
     </footer>
 
@@ -211,10 +197,7 @@
             });
             $(circulito).hide(1000)
             $('.slider').slider();
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true
-            });
+            $('.materialboxed').materialbox();
         })
     </script>
 </body>
