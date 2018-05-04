@@ -45,9 +45,9 @@
 <!-- texto de prueba -->
 
 <body>
-    <header id="header">
+    <header id="header" class="scrollspy">
         <div class="navbar-fixed">
-            <nav class="blue-grey">
+            <nav class="grey darken-3">
                 <div class="nav-wrapper container">
                     <a href="#header" class="brand-logo"><span class="large material-icons">home</span></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -87,7 +87,7 @@
             </div>
         </section>
 
-        <section id="perfil" class="section blue-grey lighten-4">
+        <section id="perfil" class="section grey scrollspy">
             <div class="container white">
                 <div class="row">
                     <div class="col s12 m12 l12">
@@ -97,7 +97,7 @@
                 <div class="row">
                     <div class="col s12 m6 l6 center">
                         <img src="imagenes/yo.jpg" class="responsive-img circle" style="width:50%" alt="foto de Francisco Rubial">
-                        <p aling="left">Autodidacta, persistente y ambicioso. He dedicado gran parte de mi carrera universitaria a enseñanza, como tambien a aprender de manera constante, siempre buscando lograr objetivos nuevos.</p>
+                        <p>Autodidacta, persistente y ambicioso. He dedicado gran parte de mi carrera universitaria a enseñanza, como también a aprender de manera constante, siempre buscando lograr objetivos nuevos.</p>
 
                     </div>
                     <div class="col s12 m6 l6">
@@ -134,7 +134,7 @@
 
         </section>
 
-        <section id="portafolio" class="section blue-grey lighten-5">
+        <section id="portafolio" class="section blue-grey lighten-5 scrollspy">
             <div class="container white">
                 <div class="row">
                     <div class="col s12 m12 l12">
@@ -183,7 +183,7 @@
 
     </main>
 
-    <footer id="contacto" class="page-footer blue-grey darken-2 white-text">
+    <footer id="contacto" class="page-footer grey darken-4 white-text scrollspy">
         <div class="container">
             <div class="row col l12 center">
                 <h4>Contactame</h4>
@@ -210,23 +210,7 @@
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav();
-            $(function() {
-                $('a[href *= \\#]').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                        location.hostname == this.hostname) {
-                        var $target = $(this.hash);
-                        $target = $target.length && $target || $('[name = ' + this.hash.slice(1) + ']');
-                        if ($target.length) {
-                            var targetOffset = $target.offset().top;
-                            $('html, body').animate({
-                                scrollTop: targetOffset
-                            }, 1000);
-                        }
-                    }
-                });
-            });
-
-
+            $('.scrollspy').scrollSpy();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
         })
