@@ -11,21 +11,29 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <style>
         .circulito {
             margin-top: 200px;
             margin-bottom: 800px;
         }
         
-        .titulo {
-            font-family: 'Playfair Display', serif;
+        .portada {
+            height: 100vh;
         }
         
-        .subtitulo {
-            font-family: 'Roboto Condensed', sans-serif;
+        .full {
+            height: 100%;
+        }
+        
+        .titulo {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        
+        .textos {
+            font-family: 'Montserrat', sans-serif;
         }
         
         body {
@@ -48,144 +56,133 @@
 <!-- texto de prueba -->
 
 <body>
-    <!--hago la barra de navegacion -->
-<header id="header">
-<div class="navbar-fixed">
-    <nav class="light-blue">
-        <div class="nav-wrapper">
-          <a href="#header" class="brand-logo center"><span class="fas fa-home"></span></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down subtitulo">
-            <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+    <header id="header">
+        <div class="navbar-fixed">
+            <nav class="blue-grey">
+                <div class="nav-wrapper">
+                    <a href="#header" class="brand-logo center"><span class="large material-icons">home</span></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down textos">
+                        <li><a href="#perfil">Perfil</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>    
-  </div>   
- </header>   
-      
+    </header>
 
-  <ul class="sidenav subtitulo" id="mobile-demo">
-    <li><a href="#perfil">Perfil</a></li>
-    <li><a href="#portafolio">Portafolio</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-          
-  
 
-    <!-- circulito pavo de carga -->
-    <div id="circulito" class="container center circulito">
-        <div class="preloader-wrapper small active">
-            <div class="spinner-layer spinner-green-only">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul class="sidenav textos" id="mobile-demo">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+
+
 
     <!-- cuerpo de la pagina  -->
-    <main class="container">
-        <!-- esta vaina es el perfil mio aqui meto labia -->
+    <main>
+
         <section id="perfil">
-
-            <div class="row">
-                <div class="col l4 hide-on-med-and-down">
-                    <figure><img class="circle responsive-img" src="imagenes/yo.jpg" alt="foto de mi"></figure>
+            <div class="parallax-container valign-wrapper">
+                <div class="container white-text">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center">
+                            <h1 class="titulo">Francisco Rubial</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l12 center">
+                            <p class="textos">Estudiante Ingenieria Informatica en <a href="https://unet.edu.ve" class="blue-text">UNET</a>. Desarrollador web. </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l8 s12 m12 center">
-                    <h1 class="titulo">Francisco Rubial</h1>
-                </div>
+                <div class="parallax"><img src="imagenes/fondo.jpg" alt="fondo del parallax"></div>
+            </div>
+        </section>
 
+        <section class="section blue-grey lighten-4">
+            <div class="container white">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h2 class="titulo center">Sobre mi</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maiores rem quaerat modi unde. Quos recusandae earum nulla corporis maxime quasi ad architecto nemo, unde ullam similique quae aut. Distinctio.</p>
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>First Names</h4>
+                            </li>
+                            <li class="collection-item">Alvin</li>
+                            <li class="collection-item">Alvin</li>
+                            <li class="collection-item">Alvin</li>
+                            <li class="collection-item">Alvin</li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m6 l6 center">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam, ex odit sint provident sunt. Nisi consequatur iure rerum, sit atque, corrupti laboriosam officia repellendus deleniti blanditiis eveniet fuga sed?</p>
+                        <img src="imagenes/logo_unet.png" class="center" alt="">
+                    </div>
+                </div>
             </div>
 
+        </section>
 
-            <div class="divider"></div>
-
-            <div class="row">
-                <h3 class="col s12 m12 l12 center titulo">Sobre mí</h3>
-            </div>
-            <div class="row">
-
-                <div class="col s12 m6 l6">
-                    <div class="subtitulo">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sit dolore expedita nostrum quibusdam accusamus explicabo ipsam quam natus, odit rem? Ipsam labore assumenda inventore nemo laboriosam optio consequuntur praesentium?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum mollitia laudantium nisi neque error excepturi quaerat esse! Quisquam inventore voluptate natus unde eum reprehenderit veniam ratione fugit blanditiis sapiente.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit vero. Nesciunt totam beatae ipsam quasi cupiditate dolores laboriosam molestias, asperiores magnam perferendis voluptatem deleniti id quam officia ipsum?</p>
+        <section id="portafolio" class="section blue-grey lighten-5">
+            <div class="container white">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h3 class="titulo center">Portafolio</h3>
                     </div>
-
                 </div>
-                <div class="col s12 m6 l6">
-                    <div class="subtitulo">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem sit tempora ducimus sapiente quaerat facere qui placeat, nulla, laborum at ipsum molestiae molestias necessitatibus dolor quod corporis dolorum optio.</p>
+                <div class="row">
+                    <div class="col l12 center">
+                        <h4 class="textos left">Cursos platzi</h4>
                     </div>
-                    <div class="container center">
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
                         <figure>
-                            <img class="responsive-img" src="imagenes/logo_unet.png">
+                            <img class="responsive-img materialboxed" width="650" src="imagenes/curso-de-javaSE.jpg" alt="diploma de Java">
+                        </figure>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <figure>
+                            <img class="responsive-img materialboxed" width="650" src="imagenes/curso-de-programacion-basica.jpg" alt="diploma programacion basica">
                         </figure>
                     </div>
                 </div>
 
+
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <figure>
+                            <img class="responsive-img materialboxed" width="650" src="imagenes/diploma-html5-css3-001.jpg" alt="diploma de Java">
+                        </figure>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <figure>
+                            <img class="responsive-img materialboxed" width="650" src="imagenes/git-github-platzi.jpg" alt="diploma de Java">
+                        </figure>
+                    </div>
+
+                </div>
             </div>
-
-
-
         </section>
 
-        <div class="divider"></div>
-
-        <section id="portafolio">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <h3 class="titulo center">Portafolio</h3>
-                </div>
-            </div>                       
-            <div class="row">
-                <div class="col l12 center"><h4 class="subtitulo left">Cursos platzi</h4></div>
-            </div>
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <figure>
-                        <img class="responsive-img materialboxed" width="650" src="imagenes/curso-de-javaSE.jpg" alt="diploma de Java">    
-                    </figure>
-                </div>
-                <div class="col s12 m6 l6">
-                    <figure>
-                        <img class="responsive-img materialboxed" width="650" src="imagenes/curso-de-programacion-basica.jpg" alt="diploma programacion basica">    
-                    </figure>
-                </div>               
-            </div>    
-        
-                
-           
-            <div class="row">
-                 <div class="col s12 m6 l6">
-                    <figure>
-                        <img class="responsive-img materialboxed" width="650" src="imagenes/diploma-html5-css3-001.jpg" alt="diploma de Java">                
-                    </figure>
-                </div>
-                <div class="col s12 m6 l6">
-                    <figure>
-                        <img class="responsive-img materialboxed" width="650" src="imagenes/git-github-platzi.jpg" alt="diploma de Java">
-                    </figure>    
-                </div>
-                             
-            </div>                 
-                
+        <section class="section blue-grey lighten-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illum voluptate! Vel unde repudiandae quam saepe voluptatem nesciunt ea est? Officia non nisi eum veniam magnam ducimus eius distinctio! Alias!</p>
         </section>
+
+
     </main>
 
-    <div style="margin: 10px"></div>
-
-
-    <footer id="contacto" class="page-footer light-blue lighten-1 white-text">
+    <footer id="contacto" class="page-footer blue-grey white-text">
         <div class="container">
             <div class="row col l12 center">
                 <h5>¿Necesitas comunicarte conmigo?</h5>
@@ -198,14 +195,13 @@
                     <a href="" target="_blank"><i class="fab fa-linkedin"></i></a></div>
                 <div class="col l3 m3 s6 center" style="font-size: 2rem">
                     <a href="https://t.me/franjorub" target="_blank"><i class="fab fa-telegram"></i></a></div>
-            </div>          
+            </div>
         </div>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script>
-
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $(function() {
@@ -223,10 +219,10 @@
                     }
                 });
             });
-            
-            $(circulito).hide(1000)           
-            $('.materialboxed').materialbox();
-            
+
+
+
+            $('.parallax').parallax();
         })
     </script>
 </body>
