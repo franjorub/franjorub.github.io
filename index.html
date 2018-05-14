@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 
     <style>
+        .skill-icon {
+            font-size: 5rem;
+            padding-top: 14px;
+        }
+        
+        .skill {
+            transition: 0.5s;
+        }
+        
+        .skill:hover {
+            transform: scale(1.08);
+        }
+        
         .titulo {
             font-family: 'Do Hyeon', sans-serif;
         }
@@ -87,47 +100,69 @@
             </div>
         </section>
 
-        <section id="perfil" class="section grey scrollspy">
-            <div class="container white">
+        <section id="perfil" class="section grey lighten-4 scrollspy">
+            <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
                         <h2 class="titulo center">Sobre mí</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m6 l6 center">
-                        <img src="imagenes/yo.jpg" class="responsive-img circle" style="width:50%" alt="foto de Francisco Rubial">
-                        <p>Autodidacta, persistente y ambicioso. He dedicado gran parte de mi carrera universitaria a enseñanza, como también a aprender de manera constante, siempre buscando lograr objetivos nuevos.</p>
+                    <div class="col s12 m12 l12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique ut nisi, corporis voluptates repellendus vel eos ad commodi magni repudiandae ea vitae deserunt alias iste nam illum odit et!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h4 class="center-align textos">Habilidades</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4 l4 skill grey darken-4">
+                        <div class="center">
+                            <i class="fab fa-react skill-icon cyan-text text-accent-3"></i>
+                        </div>
+
+                        <div class="grey-text text-lighten-5">
+                            <h4 class="center-align">React</h4>
+                            <p class="left">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores aliquid atque molestias, consectetur voluptatum earum deleniti ut corrupti id adipisci minus? Animi repellendus odit velit ipsa nostrum quisquam rerum!
+                            </p>
+
+                        </div>
 
                     </div>
-                    <div class="col s12 m6 l6">
 
-                        <ul class="collection with-header z-depth-1">
-                            <li class="collection-header">
-                                <h4>Habilidades</h4>
-                            </li>
-                            <li class="collection-item">
-                                <p>Javascript</p>
-                                <div class="progress grey lighten-2">
-                                    <div class="determinate yellow accent-3" style="width: 60%"></div>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <p>CSS</p>
-                                <div class="progress grey lighten-2">
-                                    <div class="determinate blue lighten-1" style="width: 40%"></div>
-                                </div>
+                    <div class="col s12 m4 l4 skill grey darken-4">
+                        <div class="center">
+                            <i class="fab fa-js skill-icon yellow-text text-accent-2"></i>
+                        </div>
 
-                            </li>
-                            <li class="collection-item">
-                                <p>Java</p>
-                                <div class="progress grey lighten-2">
-                                    <div class="determinate orange" style="width: 80%"></div>
-                                </div>
-                            </li>
+                        <div class="grey-text text-lighten-5">
+                            <h4 class="center-align">JavaScript</h4>
+                            <p class="left">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores aliquid atque molestias, consectetur voluptatum earum deleniti ut corrupti id adipisci minus? Animi repellendus odit velit ipsa nostrum quisquam rerum!
+                            </p>
 
-                        </ul>
+                        </div>
+
                     </div>
+
+                    <div class="col s12 m4 l4 skill grey darken-4">
+                        <div class="center">
+                            <i class="fab fa-node-js skill-icon light-green-text"></i>
+                        </div>
+
+                        <div class="grey-text text-lighten-5">
+                            <h4 class="center-align">Nodejs</h4>
+                            <p class="left">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores aliquid atque molestias, consectetur voluptatum earum deleniti ut corrupti id adipisci minus? Animi repellendus odit velit ipsa nostrum quisquam rerum!
+                            </p>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -135,7 +170,7 @@
         </section>
 
         <section id="portafolio" class="section blue-grey lighten-5 scrollspy">
-            <div class="container white">
+            <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
                         <h3 class="titulo center">Portafolio</h3>
