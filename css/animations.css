@@ -1,0 +1,72 @@
+.title-animation {
+    animation: title 1s forwards ease-out;
+    animation-delay: .5s;
+    animation-play-state: paused;
+    opacity: 0;
+    will-change: transform;
+}
+
+#perfil {
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(20px);
+}
+
+#perfil.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#react {
+    transform: rotateY(-180deg);
+    transition: 1s;
+    transform-origin: left;
+    will-change: transform;
+}
+
+#react.translate3D {
+    transform: rotateY(0deg);
+}
+
+#javascript {
+    transform: rotateX(-180deg);
+    transition: 1s;
+    transform-origin: bottom;
+    will-change: transform;
+}
+
+#javascript.translate3D {
+    transform: rotateX(0deg);
+}
+
+#nodejs {
+    transform: rotateY(180deg);
+    transition: 1s;
+    transform-origin: right;
+    will-change: transform;
+}
+
+#nodejs.translate3D {
+    transform: rotateY(0deg);
+}
+
+#portafolio {
+    transition: 1s;
+    transform: scale(.1);
+    opacity: 0;
+}
+
+#portafolio.scale {
+    transform: scale(1);
+    opacity: 1;
+}
+
+@keyframes title {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

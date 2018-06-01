@@ -8,6 +8,7 @@
     <title>Francisco Rubial</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animations.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
@@ -18,14 +19,6 @@
         .skill-icon {
             font-size: 5rem;
             padding-top: 14px;
-        }
-        
-        .skill {
-            transition: 0.5s;
-        }
-        
-        .skill:hover {
-            transform: scale(1.08);
         }
         
         h1,
@@ -88,12 +81,12 @@
 
     <main>
 
-        <section>
+        <section id="portada">
             <div class="parallax-container valign-wrapper">
                 <div class="container white-text">
                     <div class="row">
                         <div class="col s12 m12 l12 center">
-                            <h1>Francisco Rubial</h1>
+                            <h1 class="title-animation">Francisco Rubial</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -123,6 +116,7 @@
             </div>
 
         </section>
+
         <section id="habilidades" class="section scrollspy">
             <div class="container">
                 <div class="row">
@@ -132,7 +126,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m4 l4 skill grey darken-4">
+                    <div id="react" class="col s12 m4 l4  grey darken-4">
                         <div class="center">
                             <i class="fab fa-react skill-icon cyan-text text-accent-3"></i>
                         </div>
@@ -144,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4 skill grey darken-4">
+                    <div id="javascript" class="col s12 m4 l4 grey darken-4">
                         <div class="center">
                             <i class="fab fa-js skill-icon yellow-text text-accent-2"></i>
                         </div>
@@ -156,7 +150,7 @@
                         </div>
                     </div>
 
-                    <div class="col s12 m4 l4 skill grey darken-4">
+                    <div id="nodejs" class="col s12 m4 l4  grey darken-4">
                         <div class="center">
                             <i class="fab fa-node-js skill-icon light-green-text"></i>
                         </div>
@@ -176,7 +170,7 @@
             </div>
 
         </section>
-
+        <div id="portafoliotrigger"></div>
         <section id="portafolio" class="section blue-grey lighten-5 scrollspy">
             <div class="container">
                 <div class="row">
@@ -193,7 +187,7 @@
                 <div class="row">
                     <div class="col s12 m6 l6">
                         <figure>
-                            <img class="responsive-img materialboxed" width="650" src="imagenes/curso-de-javaSE.jpg" alt="diploma de Java">
+                            <img class="responsive-img materialboxed" width="650" src="imagenes/diploma-animaciones-web-001(1).jpg" alt="diploma de Animaciones web">
                         </figure>
                     </div>
                     <div class="col s12 m6 l6">
@@ -221,9 +215,6 @@
             </div>
         </section>
 
-
-
-
     </main>
 
     <footer id="contacto" class="page-footer grey darken-4 white-text scrollspy">
@@ -250,14 +241,8 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-            $('.scrollspy').scrollSpy();
-            $('.materialboxed').materialbox();
-            $('.parallax').parallax();
-        })
-    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
