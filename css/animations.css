@@ -50,13 +50,13 @@
     transform: rotateY(0deg);
 }
 
-#portafolio {
+#estudios {
     transition: 1s;
     transform: scale(.1);
     opacity: 0;
 }
 
-#portafolio.scale {
+#estudios.scale {
     transform: scale(1);
     opacity: 1;
 }

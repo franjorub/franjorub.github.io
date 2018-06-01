@@ -31,10 +31,10 @@ $(document).ready(function() {
         .setClassToggle('#nodejs', 'translate3D')
         .addTo(controller)
 
-    let portafolioScene = new ScrollMagic.Scene({
-            triggerElement: '#portafoliotrigger'
+    let estudiosScene = new ScrollMagic.Scene({
+            triggerElement: '#estudiostrigger'
         })
-        .setClassToggle('#portafolio', 'scale')
+        .setClassToggle('#estudios', 'scale')
         .addTo(controller)
 
 
