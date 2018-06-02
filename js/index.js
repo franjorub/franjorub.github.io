@@ -31,11 +31,19 @@ $(document).ready(function() {
         .setClassToggle('#nodejs', 'translate3D')
         .addTo(controller)
 
-    let estudiosScene = new ScrollMagic.Scene({
-            triggerElement: '#estudiostrigger'
+
+
+    let galleryRigthScene = new ScrollMagic.Scene({
+            triggerElement: '#estudios'
         })
-        .setClassToggle('#estudios', 'scale')
+        .setClassToggle('#rightGallery', 'translate')
         .addTo(controller)
 
+
+    let galleryLeftScene = new ScrollMagic.Scene({
+            triggerElement: '#rightGallery'
+        })
+        .setClassToggle('#leftGallery', 'translate')
+        .addTo(controller)
 
 })
