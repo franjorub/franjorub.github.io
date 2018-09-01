@@ -1,5 +1,5 @@
 footer {
-  background-color: #461dff;
+  background-color: #212121;
   color: white;
 }
 
@@ -9,8 +9,8 @@ footer a i {
 }
 
 #aboutMe {
-  background-color: #2038ff;
-  color: white;
+  background-color: #726a7f;
+  color: #fff;
 }
 
 #aboutMe img {
@@ -26,12 +26,8 @@ footer a i {
 }
 
 #portfolio {
-  background: #13a9ff;
-  color: white;
-}
-
-#carousel img {
-  max-height: 100vh;
+  background: #fbfaff;
+  color: #212121;
 }
 
 #title {
