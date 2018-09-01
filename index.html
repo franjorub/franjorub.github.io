@@ -23,6 +23,36 @@
             font-size: 3rem;
             color: white
         }
+
+        #aboutMe img {
+            max-height: 250px;
+        }
+
+        #carousel img {
+            max-height: 100vh;
+        }
+
+        #title {
+            background: url('assets/images/laptop-3190194_1920.jpg');
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        #title .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white
+        }
+
+        #title .overlay .row {
+            height: 100vh;
+        }
     </style>
 </head>
 
@@ -31,7 +61,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
 
-            <a class="navbar-brand" href="#">FR</a>
+            <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,33 +81,40 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
-                </ul><a class="navbar-brand" href="#">FR</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                </div>
+                </ul>
+
             </div>
         </div>
     </nav>
     <!-- header -->
+    <div id="title" class="container-fluid p-0">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center align-items-center">
+                    <div class="col">
+                        <h1 class="wow rubberBand display-2">Francisco Rubial</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <section id="aboutMe" class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="wow tada col-12 col-sm-4 offset-sm-1">
+                    <img src="assets/images/yo.png" class="img-fluid rounded img-thumbnail" alt="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel error perspiciatis quod, iusto sapiente
+                        voluptate saepe tempore fuga quidem nulla consectetur? Illo a eius molestiae corporis suscipit dicta
+                        mollitia cupiditate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -155,16 +192,16 @@
                 </div>
             </div>
             <div class="row pt-2">
-                <div class="col-12 col-sm-3 pt-1 pb-1">
+                <div class="col-12 col-sm-2 offset-sm-2 pt-1 pb-1">
                     <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 </div>
-                <div class="col-12 col-sm-3 pt-1 pb-1">
+                <div class="col-12 col-sm-2 pt-1 pb-1">
                     <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
                 </div>
-                <div class="col-12 col-sm-3 pt-1 pb-1">
+                <div class="col-12 col-sm-2 pt-1 pb-1">
                     <a href="#" target="_blank"><i class="fab fa-github-alt"></i></a>
                 </div>
-                <div class="col-12 col-sm-3 pt-1 pb-1">
+                <div class="col-12 col-sm-2 pt-1 pb-1">
                     <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
 
