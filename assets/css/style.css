@@ -1,0 +1,57 @@
+footer {
+  background-color: #461dff;
+  color: white;
+}
+
+footer a i {
+  font-size: 3rem;
+  color: white;
+}
+
+#aboutMe {
+  background-color: #2038ff;
+  color: white;
+}
+
+#aboutMe img {
+  max-height: 250px;
+}
+
+#tecnologies .card-header {
+  text-align: center;
+}
+
+#tecnologies i {
+  font-size: 6rem;
+}
+
+#portfolio {
+  background: #13a9ff;
+  color: white;
+}
+
+#carousel img {
+  max-height: 100vh;
+}
+
+#title {
+  background: url("../images/laptop-3190194_1920.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#title .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#title .overlay .row {
+  height: 100vh;
+}
