@@ -43,10 +43,10 @@ footer a i {
 }
 
 #title {
-  background: url("../images/laptop-3190194_1920.jpg");
+  background: url("../images/laptop-3190194_1920.jpg") no-repeat center center
+    fixed;
+
   height: 100vh;
-  background-position: center;
-  background-size: cover;
   position: relative;
 }
 
