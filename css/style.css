@@ -2,6 +2,14 @@
   font-family: "Roboto Slab", serif;
 }
 
+.javascript-inverted {
+  transition: 0.3s;
+}
+.javascript-inverted:hover {
+  background-color: #f7df1e !important;
+  color: #292929 !important;
+}
+
 h1,
 h2,
 h3,
