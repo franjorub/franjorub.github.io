@@ -111,6 +111,12 @@ class FrExperience extends HTMLElement {
     this.setupIntersectionObserver();
   }
 
+  disconnectedCallback() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
   setupIntersectionObserver() {
     const options = {
       root: null,
@@ -118,7 +124,7 @@ class FrExperience extends HTMLElement {
       threshold: 0
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const target = entry.target;
         const marker = target.querySelector('.timeline-marker');
@@ -144,7 +150,9 @@ class FrExperience extends HTMLElement {
     }, options);
 
     const items = this.querySelectorAll('.timeline-item');
-    items.forEach((item) => observer.observe(item));
+    items.forEach((item) => {
+      this.observer.observe(item);
+    });
   }
 
   highlightItem(item, marker) {
