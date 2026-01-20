@@ -23,7 +23,7 @@ class FrSectionHeader extends HTMLElement {
 
         this.innerHTML = `
       <div class="flex items-center gap-4 mb-8">
-        <span class="text-terminal-dim">${number}</span>
+        <span class="text-terminal-green/90">${number}</span>
         <h2 class="text-xl font-bold bg-terminal-dim px-2">${title}</h2>
         <div class="flex-1 border-b border-terminal-dim"></div>
       </div>

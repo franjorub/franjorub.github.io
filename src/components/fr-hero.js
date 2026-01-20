@@ -74,7 +74,7 @@ class FrHero extends HTMLElement {
               REACT_&amp;_JS_SPECIALIST<span class="hero-cursor"></span>
             </h1>
           </div>
-          <p class="max-w-2xl text-base sm:text-lg opacity-80 leading-relaxed">
+          <p class="max-w-2xl text-base sm:text-lg opacity-90 leading-relaxed">
             &gt; I turn complex problems into elegant, scalable code.<br />
             &gt; Focus: High-performance web applications &amp; system architecture.
           </p>

@@ -85,8 +85,8 @@ class FrExperience extends HTMLElement {
     const experienceItems = this.experiences
       .map(
         (exp) => `
-        <div class="relative pl-6 border-l border-terminal-dim">
-          <div class="absolute -left-1.5 top-0 w-3 h-3 ${exp.isActive ? 'bg-terminal-green' : 'bg-terminal-dim'}"></div>
+        <div class="timeline-item relative pl-6 border-l border-terminal-dim transition-colors duration-300">
+          <div class="timeline-marker absolute -left-1.5 top-0 w-3 h-3 bg-terminal-dim transition-colors duration-300 shadow-none"></div>
           <div class="mb-2">
             <span class="text-terminal-green/70">[${exp.period}]</span>
             <h3 class="text-lg font-bold">${exp.title}</h3>
@@ -107,6 +107,73 @@ class FrExperience extends HTMLElement {
         </div>
       </section>
     `;
+
+    this.setupIntersectionObserver();
+  }
+
+  setupIntersectionObserver() {
+    const options = {
+      root: null,
+      rootMargin: '-20% 0px -20% 0px', // Trigger when element is near center/viewport
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const target = entry.target;
+        const marker = target.querySelector('.timeline-marker');
+
+        if (entry.isIntersecting) {
+          // Element is in view: highlight it
+          this.highlightItem(target, marker);
+        } else {
+          // Element is out of view
+          // If rootBounds is available, use it to determine exit direction
+          // Fallback to 0 if not (though rootBounds usually exists with defaults)
+          const rootTop = entry.rootBounds ? entry.rootBounds.top : 0;
+
+          if (entry.boundingClientRect.top < rootTop) {
+            // Exited via top (scrolling down): keep it highlighted
+            this.highlightItem(target, marker);
+          } else {
+            // Exited via bottom (scrolling up): dim it
+            this.dimItem(target, marker);
+          }
+        }
+      });
+    }, options);
+
+    const items = this.querySelectorAll('.timeline-item');
+    items.forEach((item) => observer.observe(item));
+  }
+
+  highlightItem(item, marker) {
+    if (item) {
+      item.classList.remove('border-terminal-dim');
+      item.classList.add('border-terminal-green');
+    }
+    if (marker) {
+      marker.classList.remove('bg-terminal-dim');
+      marker.classList.add('bg-terminal-green');
+      marker.classList.add('shadow-[0_0_10px_rgba(0,255,65,0.5)]');
+    }
+  }
+
+  dimItem(item, marker) {
+    // Don't dim the first item if we want it to stay lit at the top? 
+    // Actually the user wants "only the first one remaining". 
+    // If we are at the top, the first one is visible, so it stays highlighted. 
+    // This logic is naturally handled by isIntersecting=true for the first item when at top.
+
+    if (item) {
+      item.classList.remove('border-terminal-green');
+      item.classList.add('border-terminal-dim');
+    }
+    if (marker) {
+      marker.classList.remove('bg-terminal-green');
+      marker.classList.remove('shadow-[0_0_10px_rgba(0,255,65,0.5)]');
+      marker.classList.add('bg-terminal-dim');
+    }
   }
 }
 
