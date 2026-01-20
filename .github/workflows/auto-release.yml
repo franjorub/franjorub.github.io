@@ -31,13 +31,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Bump Version
+      - name: Tag and Push
         id: version
         run: |
-          npm version minor -m "chore(release): %s"
-          TAG_NAME=$(git describe --tags --abbrev=0)
+          TAG_NAME="v$(node -p "require('./package.json').version")"
           echo "tag=$TAG_NAME" >> $GITHUB_OUTPUT
-          git push origin HEAD:main --tags
+          
+          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
+            git tag -d "$TAG_NAME"
+            git push --delete origin "$TAG_NAME"
+          fi
+          
+          git tag "$TAG_NAME"
+          git push origin "$TAG_NAME"
 
       - name: Release
         uses: softprops/action-gh-release@v1
