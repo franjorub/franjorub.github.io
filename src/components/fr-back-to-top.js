@@ -2,16 +2,19 @@ class FrBackToTop extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
+        this.observer = null;
     }
 
     connectedCallback() {
         this.render();
-        this.setupScrollListener();
+        this.setupIntersectionObserver();
         this.setupClickHandler();
     }
 
     disconnectedCallback() {
-        window.removeEventListener("scroll", this.handleScroll);
+        if (this.observer) {
+            this.observer.disconnect();
+        }
     }
 
     render() {
@@ -97,18 +100,31 @@ class FrBackToTop extends HTMLElement {
     `;
     }
 
-    setupScrollListener() {
+    setupIntersectionObserver() {
         const button = this.shadowRoot.querySelector(".back-to-top");
+        const target = document.querySelector("#scroll-observer-target");
 
-        this.handleScroll = () => {
-            if (window.scrollY > 300) {
-                button.classList.add("visible");
-            } else {
-                button.classList.remove("visible");
-            }
+        if (!target) {
+            console.error("Scroll observer target not found");
+            return;
+        }
+
+        const callback = (entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    button.classList.add("visible");
+                } else {
+                    button.classList.remove("visible");
+                }
+            });
         };
 
-        window.addEventListener("scroll", this.handleScroll, { passive: true });
+        const options = {
+            rootMargin: "-300px 0px 0px 0px",
+        };
+
+        this.observer = new IntersectionObserver(callback, options);
+        this.observer.observe(target);
     }
 
     setupClickHandler() {
