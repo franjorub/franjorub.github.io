@@ -4,9 +4,9 @@
 class FrContact extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <section class="scroll-mt-20 border border-terminal-green p-8 bg-terminal-green/5" id="contact">
+      <section class="scroll-mt-20 border border-terminal-green p-4 md:p-8 bg-terminal-green/5" id="contact">
         <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-2xl font-bold mb-4">INIT_CONNECTION_PROTOCOL</h2>
+          <h2 class="text-lg md:text-2xl font-bold mb-4 break-all">INIT_CONNECTION_PROTOCOL</h2>
           <p class="mb-8 opacity-90">Currently accepting new project inquiries. Connection lines are open via the following secure channels:</p>
           <div class="flex flex-col gap-4 items-center">
             <a class="text-lg border-b border-terminal-green hover:bg-terminal-green hover:text-terminal-bg transition-all px-4" href="mailto:franjorub@gmail.com">franjorub@gmail.com</a>
