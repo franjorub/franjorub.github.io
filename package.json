@@ -17,9 +17,15 @@
     "check:fix": "biome check --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "web-components",
+    "vanilla-js",
+    "tailwindcss",
+    "vite"
+  ],
+  "author": "Francisco Rubial",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "2.3.11",
