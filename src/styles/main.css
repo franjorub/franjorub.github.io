@@ -26,6 +26,9 @@ body {
   background-color: var(--color-terminal-bg);
   color: var(--color-terminal-green);
   font-family: var(--font-mono);
+}
+
+.text-glow {
   text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
 }
 
