@@ -12,7 +12,7 @@ class FrHeader extends HTMLElement {
             <div class="text-xs opacity-90 mb-1">SYSTEM_VERSION: ${version}-STABLE</div>
             <div class="text-xl font-bold tracking-tighter">FRANCISCO_RUBIAL_OS [v1.0]</div>
           </div>
-          <div class="text-right">
+          <div class="text-left md:text-right">
             <div class="text-xs opacity-90">LOCATION: CLOUD_NET</div>
             <div class="text-sm">STATUS: <span class="animate-pulse">ONLINE_AVAILABLE</span></div>
           </div>
