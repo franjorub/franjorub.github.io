@@ -5,20 +5,14 @@ class FrHero extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-        @keyframes hero-glow {
-          0%, 100% {
-            box-shadow: 
-              0 0 5px rgba(0, 255, 65, 0.4),
-              0 0 10px rgba(0, 255, 65, 0.2),
-              inset 0 0 5px rgba(0, 255, 65, 0.1);
-          }
-          50% {
-            box-shadow: 
-              0 0 15px rgba(0, 255, 65, 0.6),
-              0 0 30px rgba(0, 255, 65, 0.4),
-              0 0 45px rgba(0, 255, 65, 0.2),
-              inset 0 0 10px rgba(0, 255, 65, 0.2);
-          }
+        @keyframes hero-glow-pulse {
+          0%, 100% { opacity: 0; }
+          50% { opacity: 1; }
+        }
+
+        @keyframes hero-glow-pulse-reverse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
         }
 
         @keyframes text-flicker {
@@ -49,7 +43,39 @@ class FrHero extends HTMLElement {
         }
 
         .hero-box {
-          animation: hero-glow 4s ease-in-out infinite;
+          position: relative;
+          z-index: 0;
+        }
+
+        .hero-box::before,
+        .hero-box::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          pointer-events: none;
+          border-radius: inherit;
+        }
+
+        /* Low Glow State */
+        .hero-box::before {
+          box-shadow:
+            0 0 5px rgba(0, 255, 65, 0.4),
+            0 0 10px rgba(0, 255, 65, 0.2),
+            inset 0 0 5px rgba(0, 255, 65, 0.1);
+          opacity: 1;
+          animation: hero-glow-pulse-reverse 4s ease-in-out infinite;
+        }
+
+        /* High Glow State */
+        .hero-box::after {
+          box-shadow:
+            0 0 15px rgba(0, 255, 65, 0.6),
+            0 0 30px rgba(0, 255, 65, 0.4),
+            0 0 45px rgba(0, 255, 65, 0.2),
+            inset 0 0 10px rgba(0, 255, 65, 0.2);
+          opacity: 0;
+          animation: hero-glow-pulse 4s ease-in-out infinite;
         }
 
         .hero-title {
